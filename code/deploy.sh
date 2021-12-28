@@ -21,5 +21,4 @@ echo "Deleting temp branch..."
 git push origin --delete $temp_branch
 echo "Deleted temp branch, deleting all local generated files"
 shopt -s extglob
-rm ".gitignore"
 rm -vr !(code|.git)
