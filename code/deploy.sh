@@ -5,6 +5,7 @@ temp_branch="temp_branch_"${date_time}
 
 # perform build
 echo "Starting Gatsby build ${date_time}"
+npm install
 gatsby build
 
 # copy files
