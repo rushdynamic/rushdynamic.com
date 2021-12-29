@@ -11,7 +11,7 @@ gatsby build
 # copy files
 echo "Finished building, copying generated files..."
 cp -af public/. ../.
-#cp CNAME ../CNAME
+cp CNAME ../CNAME
 
 # create and push to temp branch
 echo "Finished copying, creating a new branch..."
