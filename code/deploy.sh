@@ -40,6 +40,6 @@ git rm -r code/ # ignore already committed 'code' dir
 git push origin main
 
 # delete temp branch
-echo "Deleting temp branch..."
-git push origin --delete $temp_branch
+#echo "Deleting temp branch..."
+#git push origin --delete $temp_branch
 echo "Finished deployment"
