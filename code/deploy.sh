@@ -29,7 +29,7 @@ wait
 echo "Pushing changes to main branch..."
 git merge -s ours main
 git checkout main
-git merge $temp_branch
+#git merge $temp_branch
 git push origin main
 
 # local cleanup
