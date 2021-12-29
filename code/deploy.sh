@@ -53,7 +53,7 @@ function merge_to_master() {
 
 # local cleanup
 function clean_local() {
-    git checkout gatsby
+    git checkout develop
     echo "Deleted temp branch, deleting all local generated files..."
     rm -vr !(code|.git)
     wait
