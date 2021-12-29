@@ -11,7 +11,7 @@ gatsby build
 # copy files
 echo "Finished building, copying generated files..."
 cp -af public/. ../.
-#cp CNAME ../CNAME
+cp CNAME ../CNAME
 
 # create and push to temp branch
 echo "Finished copying, creating a new branch..."
@@ -25,23 +25,18 @@ git push origin $temp_branch
 echo "Pushed changes to temp branch"
 wait
 
+# merge temp branch to main
+echo "Pushing changes to main branch..."
+git merge -s ours main
+git checkout main
+git merge $temp_branch
+
 # local cleanup
 git checkout gatsby
 echo "Deleted temp branch, deleting all local generated files..."
 shopt -s extglob
 rm -vr !(code|.git)
 wait
-
-# merge temp branch to main
-echo "Pushing changes to main branch..."
-git fetch origin
-git checkout main
-git pull origin main
-rm -vr !(CNAME|.git)
-wait
-git merge $temp_branch
-git rm -r code/ # ignore already committed 'code' dir
-git push origin main
 
 # delete temp branch
 #echo "Deleting temp branch..."
