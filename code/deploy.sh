@@ -23,12 +23,14 @@ git add .
 git commit -m "Gatsby build ${date_time}"
 git push origin $temp_branch
 echo "Pushed changes to temp branch"
+wait
 
 # local cleanup
 git checkout gatsby
 echo "Deleted temp branch, deleting all local generated files..."
 shopt -s extglob
 rm -vr !(code|.git)
+wait
 
 # merge temp branch to main
 echo "Pushing changes to main branch..."
@@ -36,6 +38,7 @@ git fetch origin
 git checkout main
 git pull origin main
 rm -vr !(CNAME|.git)
+wait
 git merge $temp_branch
 git rm -r code/ # ignore already committed 'code' dir
 git push origin main
