@@ -1,0 +1,17 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: black;
+  color: #fefefe;
+
+  .global-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+}
