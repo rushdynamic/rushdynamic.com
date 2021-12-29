@@ -1,4 +1,10 @@
 #!/bin/sh
+
+# TODO: 
+# * add colors to loggers
+# * handle cleanup/local rollback incase of failure
+# * optimize merge to master
+
 set -e
 shopt -s extglob
 
