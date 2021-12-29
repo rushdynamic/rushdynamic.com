@@ -1,2 +1,0 @@
-# rushdynamic.com
-Personal homepage
