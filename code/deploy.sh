@@ -11,7 +11,7 @@ gatsby build
 # copy files
 echo "Finished building, copying generated files..."
 cp -af public/. ../.
-cp CNAME ../CNAME
+#cp CNAME ../CNAME
 
 # create and push to temp branch
 echo "Finished copying, creating a new branch..."
@@ -35,6 +35,7 @@ echo "Pushing changes to main branch..."
 git fetch origin
 git checkout main
 git pull origin main
+rm -vr !(CNAME|.git)
 git merge $temp_branch
 git rm -r code/ # ignore already committed 'code' dir
 git push origin main
