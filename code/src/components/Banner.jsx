@@ -7,7 +7,7 @@ export default function Banner() {
     <div className="main-banner">
       <div className="text-container">
         <p className="banner-text">
-          Hi, I'm <span className="name-text">Gokul</span>
+          Hi, I'm Gokul<span className="cursor-text">_</span>
         </p>
       </div>
     </div>

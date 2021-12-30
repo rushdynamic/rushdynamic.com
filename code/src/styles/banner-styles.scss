@@ -16,8 +16,16 @@
     border-style: none none dashed none;
     border-color: #5d7a06;
     border-width: 10px;
-    .name-text {
-      font-weight: bold;
+
+    .cursor-text {
+      padding-left: 0.5rem;
+      animation: blink 1s linear infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
     }
     p {
       padding: 0;
