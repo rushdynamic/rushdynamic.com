@@ -5,12 +5,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 128px;
+  font-size: 64px;
+  letter-spacing: 0.5rem;
   height: 100%;
 
   .text-container {
-    background-color: #cbfb45;
-    padding: 3rem;
-    border-radius: 15px;
+    background-color: #151517;
+    padding: 1rem;
+    color: #cbfb45;
+    border-style: none none dashed none;
+    border-color: #5d7a06;
+    border-width: 10px;
+    .name-text {
+      font-weight: bold;
+    }
+    p {
+      padding: 0;
+      margin: 0;
+    }
   }
 }
