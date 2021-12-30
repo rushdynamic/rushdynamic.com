@@ -1,9 +1,16 @@
 .main-banner {
-  font-family: "Yeseva One", cursive;
+  font-family: "Raleway";
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 128px;
   height: 100%;
+
+  .text-container {
+    background-color: #cbfb45;
+    padding: 3rem;
+    border-radius: 15px;
+  }
 }

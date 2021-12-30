@@ -1,7 +1,11 @@
 import React from "react"
-import "@fontsource/yeseva-one"
+import "@fontsource/raleway"
 import "../styles/banner-styles.scss"
 
 export default function Banner() {
-  return <div className="main-banner">Hi, I'm Gokul</div>
+  return (
+    <div className="main-banner">
+      <div className="text-container">Hi, I'm Gokul</div>
+    </div>
+  )
 }
