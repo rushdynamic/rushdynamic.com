@@ -12,12 +12,17 @@
     cursor: pointer;
     background-color: #151517;
     padding: 1rem;
-    color: #cbfb45;
+    color: #efefef;
     border-style: none none none none;
     border-color: #5d7a06;
     border-width: 4px;
 
+    .name-text {
+      color: #cbfb45;
+    }
+
     .cursor-text {
+      color: #cbfb45;
       padding-left: 0.5rem;
       animation: blink 1s linear infinite;
     }
