@@ -27,14 +27,14 @@ const projectsJson = [
   },
   {
     title: "strife-live",
-    thumbnail: "thumbnails/strife.png",
+    thumbnail: "thumbnails/slive.png",
     url: "https://github.com/RushDynamic/strife-live",
     description: "Wrapper library for VoIP using WebRTC",
     tags: ["javascript", "websocket", "webrtc", "voip"],
   },
   {
     title: "filecastle",
-    thumbnail: "thumbnails/strife.png",
+    thumbnail: "thumbnails/fc.png",
     url: "https://github.com/RushDynamic/FileCastle",
     description: "AES encryption utility for files and folders (Windows)",
     tags: ["c#", "aes", "buffering", "security"],

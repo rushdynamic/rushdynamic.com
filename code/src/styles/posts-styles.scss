@@ -55,6 +55,9 @@
     display: flex;
     justify-content: center;
     margin: 1rem;
+    img {
+      max-width: 500px;
+    }
   }
 
   .post-description-container {
