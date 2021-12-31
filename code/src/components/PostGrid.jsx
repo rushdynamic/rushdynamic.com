@@ -12,6 +12,7 @@ export default function PostGrid() {
             postThumbnail={post.thumbnail}
             postTitle={post.title}
             postDescription={post.description}
+            key={post.title}
           />
         ))}
       </div>
