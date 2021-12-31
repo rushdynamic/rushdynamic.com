@@ -55,6 +55,7 @@ function merge_to_master() {
 function clean_local() {
     git checkout develop
     echo "Deleted temp branch, deleting all local generated files..."
+    touch blankfile
     rm -vr !(code|.git)
     wait
 }
