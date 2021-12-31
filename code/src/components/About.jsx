@@ -11,7 +11,7 @@ export default function About() {
       transition={{ duration: 0.5 }}
     >
       <div className="about-name-container">
-        <img src="p/temi_c_prof_circle_small.png" />
+        <img src="p/temi_c_prof_circle_small.png" alt="profile-picture" />
         <h1>Gokul Syam</h1>
       </div>
       <div className="about-summary-container">
