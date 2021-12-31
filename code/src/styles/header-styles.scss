@@ -1,4 +1,24 @@
 .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .pages-container {
+    display: flex;
+    h4 {
+      border-style: none none solid none;
+      border-color: #cbfb45;
+      border-width: 2px;
+      color: #efefef;
+      padding: 0.5rem;
+      opacity: 50%;
+      transition: 0.4s;
+    }
+
+    h4:hover {
+      opacity: 100%;
+    }
+  }
+
   h4 {
     font-family: "JetBrains Mono", monospace;
     margin: 1rem;

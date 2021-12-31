@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import "../styles/global-styles.scss"
 import Header from "../components/Header"
-import PostGrid from "../components/PostGrid"
+import About from "../components/About"
 import Links from "../components/Links"
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
       </Helmet>
       <div className="global-container">
         <Header />
-        <PostGrid />
+        <About />
         <Links />
       </div>
     </>

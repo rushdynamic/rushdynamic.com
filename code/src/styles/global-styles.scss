@@ -16,3 +16,9 @@ html {
     max-height: 100vh;
   }
 }
+
+@font-face {
+  font-family: "Tex Gyre Heros";
+  src: local("Tex Gyre Heros"),
+    url(../fonts/texgyreheros-regular.otf) format("opentype");
+}

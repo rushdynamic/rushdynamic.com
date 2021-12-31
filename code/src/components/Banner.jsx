@@ -4,7 +4,7 @@ import "../styles/banner-styles.scss"
 
 export default function Banner() {
   function handleChangePage(e) {
-    navigate("/projects")
+    navigate("/about")
   }
   return (
     <div className="main-banner">

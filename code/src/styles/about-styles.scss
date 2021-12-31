@@ -1,0 +1,28 @@
+.about-container {
+  height: 100%;
+  margin: 5rem;
+  display: flex;
+  justify-content: space-around;
+  a {
+    color: #cbfb45;
+  }
+  .about-name-container {
+    font-family: "Tex Gyre Heros";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-summary-container {
+    font-family: "Rubik";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  p {
+    letter-spacing: 0.1rem;
+  }
+  h1 {
+    font-size: 128px;
+  }
+}
