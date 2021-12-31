@@ -1,8 +1,14 @@
 import React from "react"
+import { motion } from "framer-motion"
+import Tag from "./Tag"
 
 export default function Post(props) {
   return (
-    <div className="post-container">
+    <motion.div
+      className="post-container"
+      whileHover={{ scale: 1.05 }}
+      onClick={() => window.open(props.projectUrl)}
+    >
       <div className="post-title">
         <h2>{props.postTitle}</h2>
       </div>
@@ -11,7 +17,12 @@ export default function Post(props) {
       </div>
       <div className="post-description-container">
         <p className="post-description">{props.postDescription}</p>
+        <div className="tags-container">
+          {props.postTags.map(tag => (
+            <Tag tagName={tag} />
+          ))}
+        </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
