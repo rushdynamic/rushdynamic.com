@@ -6,13 +6,17 @@ import "../styles/posts-styles.scss"
 
 export default function PostGrid() {
   return (
-    <div className="posts-outer-container">
-      <motion.div
-        className="posts-grid-container"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
+    <motion.div
+      className="posts-outer-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className="projects-title-container">
+        <h1 className="projects-title">Projects</h1>
+        <hr />
+      </div>
+      <div className="posts-grid-container">
         {Posts.map(post => (
           <Post
             postThumbnail={post.thumbnail}
@@ -23,7 +27,7 @@ export default function PostGrid() {
             key={post.title}
           />
         ))}
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
   )
 }
