@@ -1,6 +1,11 @@
+@font-face {
+  font-family: "Tex Gyre Heros";
+  src: local("Tex Gyre Heros"),
+    url(../fonts/texgyreheros-regular.otf) format("opentype");
+}
+
 .main-banner {
   font-family: "Raleway";
-  font-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,12 +15,13 @@
   height: 100%;
 
   .text-container {
+    cursor: pointer;
     background-color: #151517;
     padding: 1rem;
     color: #cbfb45;
     border-style: none none dashed none;
     border-color: #5d7a06;
-    border-width: 10px;
+    border-width: 7px;
 
     .cursor-text {
       padding-left: 0.5rem;

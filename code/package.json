@@ -14,7 +14,9 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@fontsource/jetbrains-mono": "^4.5.0",
     "@fontsource/raleway": "^4.5.0",
+    "@fontsource/rubik": "^4.5.0",
     "@fontsource/yeseva-one": "^4.5.0",
     "gatsby": "^4.4.0",
     "gatsby-plugin-react-helmet": "^5.4.0",

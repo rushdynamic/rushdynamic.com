@@ -1,11 +1,8 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import "../styles/global-styles.scss"
-import "@fontsource/raleway"
-import "@fontsource/jetbrains-mono"
-import "@fontsource/rubik"
 import Header from "../components/Header"
-import Banner from "../components/Banner"
+import PostGrid from "../components/PostGrid"
 import Links from "../components/Links"
 
 export default function Home() {
@@ -18,7 +15,7 @@ export default function Home() {
       </Helmet>
       <div className="global-container">
         <Header />
-        <Banner />
+        <PostGrid />
         <Links />
       </div>
     </>
