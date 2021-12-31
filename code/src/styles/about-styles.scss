@@ -10,8 +10,21 @@
   .about-name-container {
     font-family: "Tex Gyre Heros";
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    img {
+      max-width: 400px;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+    img,
+    h1 {
+      margin: 0;
+    }
   }
   .about-summary-container {
     font-family: "Rubik";

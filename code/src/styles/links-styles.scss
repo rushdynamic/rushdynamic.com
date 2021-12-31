@@ -3,5 +3,10 @@
   justify-content: center;
   img {
     margin: 1rem;
+    opacity: 50%;
+    transition: 0.3s;
+  }
+  img:hover {
+    opacity: 100%;
   }
 }
