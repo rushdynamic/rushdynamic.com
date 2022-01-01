@@ -12,7 +12,10 @@ export default function About() {
     >
       <div className="about-left-container">
         <div className="about-img-container">
-          <img
+          <motion.img
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
             src="/p/temi_c_prof_circle_small.png"
             alt="profile-picture"
             draggable="false"
