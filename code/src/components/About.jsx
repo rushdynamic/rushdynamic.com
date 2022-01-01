@@ -13,7 +13,7 @@ export default function About() {
       <div className="about-left-container">
         <div className="about-img-container">
           <img
-            src="p/temi_c_prof_circle_small.png"
+            src="/p/temi_c_prof_circle_small.png"
             alt="profile-picture"
             draggable="false"
           />

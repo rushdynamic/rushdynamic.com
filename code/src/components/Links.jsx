@@ -9,14 +9,14 @@ export default function Links() {
         target="_blank"
         rel="noreferrer"
       >
-        <img src="icons/gh.png" height="24px" alt="github" />
+        <img src="/icons/gh.png" height="24px" alt="github" />
       </a>
       <a
         href="https://www.linkedin.com/in/gokulsyam/"
         target="_blank"
         rel="noreferrer"
       >
-        <img src="icons/li.png" height="24px" alt="linkedin" />
+        <img src="/icons/li.png" height="24px" alt="linkedin" />
       </a>
     </div>
   )
