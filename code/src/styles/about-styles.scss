@@ -7,7 +7,7 @@
     color: #cbfb45;
     text-decoration: none;
   }
-  .about-name-container {
+  .about-left-container {
     font-family: "Tex Gyre Heros";
     display: flex;
     flex-direction: column;
@@ -15,18 +15,25 @@
     align-items: center;
     img {
       max-width: 400px;
+    }
+
+    .about-image-container,
+    img {
       -webkit-user-select: none;
       -khtml-user-select: none;
       -moz-user-select: none;
       -o-user-select: none;
       user-select: none;
+      pointer-events: none;
     }
+
     img,
     h1 {
       margin: 0;
     }
   }
-  .about-summary-container {
+
+  .about-right-container {
     font-family: "Rubik";
     display: flex;
     flex-direction: column;

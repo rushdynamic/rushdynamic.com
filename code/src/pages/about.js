@@ -11,7 +11,7 @@ export default function Home() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Rush Dynamic</title>
-        <link rel="canonical" href="https://rushdynamic.com/projects" />
+        <link rel="canonical" href="https://rushdynamic.com/about" />
       </Helmet>
       <div className="global-container">
         <Header />

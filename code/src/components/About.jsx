@@ -10,11 +10,17 @@ export default function About() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="about-name-container">
-        <img src="p/temi_c_prof_circle_small.png" alt="profile-picture" />
+      <div className="about-left-container">
+        <div className="about-img-container">
+          <img
+            src="p/temi_c_prof_circle_small.png"
+            alt="profile-picture"
+            draggable="false"
+          />
+        </div>
         <h1>Gokul Syam</h1>
       </div>
-      <div className="about-summary-container">
+      <div className="about-right-container">
         <p>Front-end, back-end, and everything in between.</p>
         <p>
           I'm a fullstack developer and an opensource enthusiast, among other
