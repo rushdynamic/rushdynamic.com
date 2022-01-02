@@ -12,7 +12,7 @@ date_time=`date "+%Y%m%d-%H%M%S"`
 temp_branch="temp_branch_"${date_time}
 
 # colors and text formatting
-BOLD="\e[1mBold"
+BOLD="\e[1m"
 RED="\e[31m"
 LIGHTGREEN="\e[92m"
 CYAN="\e[96m"
@@ -22,8 +22,8 @@ NC="\e[0m"
 
 # perform build
 function build_local() {
-    echo -e "${BOLD}${CYAN}Starting Gatsby build ${date_time}${NC}"
-    echo -e "${BOLD}${CYAN}Installing dependencies using npm${NC}"
+    echo -e "${BOLD}${CYAN}Starting Gatsby build ${date_time}"
+    echo -e "Installing dependencies using npm${NC}"
     npm install 
     echo -e "${BOLD}${LIGHTGREEN}Successfully installed dependencies${NC}"
     gatsby build 
