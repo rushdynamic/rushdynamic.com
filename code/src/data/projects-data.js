@@ -1,4 +1,3 @@
-// TODO: Update thumbnails
 const projectsJson = [
   {
     title: "strife",
