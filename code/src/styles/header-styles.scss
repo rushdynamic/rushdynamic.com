@@ -10,14 +10,14 @@
       border-width: 2px;
       color: #efefef;
       padding: 0.5rem;
+    }
+    .non-selected-page {
       opacity: 50%;
       transition: 0.4s;
     }
-
-    h4:hover {
+    .non-selected-page:hover {
       opacity: 100%;
     }
-
     .selected-page {
       opacity: 100%;
     }
