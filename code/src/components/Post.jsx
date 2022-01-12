@@ -19,7 +19,7 @@ export default function Post(props) {
         <p className="post-description">{props.postDescription}</p>
         <div className="tags-container">
           {props.postTags.map(tag => (
-            <Tag tagName={tag} />
+            <Tag tagName={tag} key={tag} />
           ))}
         </div>
       </div>
