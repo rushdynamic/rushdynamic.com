@@ -1,8 +1,16 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import Tag from "./Tag"
 
 export default function Post(props) {
+  const imgRef = useRef(null)
+
+  useEffect(() => {
+    if (imgRef.current?.complete) {
+      props.setLoadedImgCount(props.loadedImgCount + 1)
+    }
+  }, [])
+
   return (
     <motion.div
       className="post-container"
@@ -14,6 +22,7 @@ export default function Post(props) {
       </div>
       <div className="post-thumbnail-container">
         <img
+          ref={imgRef}
           src={props.postThumbnail}
           alt="post-thumbnail"
           height="150"
