@@ -28,7 +28,7 @@ export default function About() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              src="https://rushdynamic.com/thumbnails/flsm.png"
+              src="/p/temi_c_prof_circle_small.png"
               alt="profile-picture"
               draggable="false"
               onLoad={() => setImgLoaded(true)}
