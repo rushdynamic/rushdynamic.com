@@ -1,10 +1,17 @@
-import React, { useState } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import { motion } from "framer-motion"
 import Spinner from "./Spinner"
 import "../styles/about-styles.scss"
 
 export default function About() {
   const [imgLoaded, setImgLoaded] = useState(false)
+  const imgRef = useRef(null)
+
+  useEffect(() => {
+    if (imgRef.current?.complete) {
+      setImgLoaded(true)
+    }
+  }, [])
   return (
     <>
       <motion.div
@@ -17,13 +24,15 @@ export default function About() {
         <div className="about-left-container">
           <div className="about-img-container">
             <motion.img
+              ref={imgRef}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              src="/p/temi_c_prof_circle_small.png"
+              src="https://rushdynamic.com/thumbnails/flsm.png"
               alt="profile-picture"
               draggable="false"
               onLoad={() => setImgLoaded(true)}
+              decoding="async"
             />
           </div>
           <h1>Gokul Syam</h1>
