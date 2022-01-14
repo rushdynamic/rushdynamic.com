@@ -13,7 +13,12 @@ export default function Post(props) {
         <h2>{props.postTitle}</h2>
       </div>
       <div className="post-thumbnail-container">
-        <img src={props.postThumbnail} alt="post-thumbnail" height="150" />
+        <img
+          src={props.postThumbnail}
+          alt="post-thumbnail"
+          height="150"
+          onLoad={() => props.setLoadedImgCount(props.loadedImgCount + 1)}
+        />
       </div>
       <div className="post-description-container">
         <p className="post-description">{props.postDescription}</p>
