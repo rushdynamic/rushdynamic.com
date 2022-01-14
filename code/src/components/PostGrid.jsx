@@ -10,7 +10,7 @@ export default function PostGrid() {
   return (
     <>
       <motion.div
-        style={{ display: Posts.length === loadedImgCount ? "flex" : "none" }}
+        style={{ display: loadedImgCount >= Posts.length ? "flex" : "none" }}
         className="posts-outer-container"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -35,7 +35,7 @@ export default function PostGrid() {
           ))}
         </div>
       </motion.div>
-      {Posts.length !== loadedImgCount && <Spinner />}
+      {loadedImgCount < Posts.length && <Spinner />}
     </>
   )
 }
