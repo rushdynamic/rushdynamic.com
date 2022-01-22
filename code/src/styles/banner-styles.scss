@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 4rem;
   letter-spacing: 0.5rem;
   height: 100%;
 
@@ -16,6 +16,12 @@
     border-style: none none none none;
     border-color: #5d7a06;
     border-width: 4px;
+
+    .second-line-container {
+      @media screen and (max-width: 1024px) {
+        font-size: 3rem;
+      }
+    }
 
     p {
       text-align: center;

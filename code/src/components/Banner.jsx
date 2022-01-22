@@ -18,7 +18,7 @@ export default function Banner() {
           onClick={handleChangePage}
         >
           Hi,{" "}
-          <span>
+          <span className="second-line-container">
             <span className="im-text">I'm</span>{" "}
             <span className="name-text">Gokul</span>
             <span className="cursor-text">_</span>
