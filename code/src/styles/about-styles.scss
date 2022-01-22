@@ -3,6 +3,10 @@
   margin: 5rem;
   display: flex;
   justify-content: space-around;
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
   a {
     color: #cbfb45;
     text-decoration: none;

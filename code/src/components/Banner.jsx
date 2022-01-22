@@ -17,8 +17,12 @@ export default function Banner() {
           transition={{ type: "spring", stiffness: 300 }}
           onClick={handleChangePage}
         >
-          Hi, I'm <span className="name-text">Gokul</span>
-          <span className="cursor-text">_</span>
+          Hi,{" "}
+          <span>
+            <span className="im-text">I'm</span>{" "}
+            <span className="name-text">Gokul</span>
+            <span className="cursor-text">_</span>
+          </span>
         </motion.p>
       </div>
     </div>
