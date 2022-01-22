@@ -13,6 +13,7 @@ export default function Home() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
+        <meta name="icon" href="/favicon.ico" />
         <title>Rush Dynamic</title>
         <link rel="canonical" href="https://rushdynamic.com/" />
       </Helmet>
