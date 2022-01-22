@@ -23,3 +23,18 @@ html {
   src: local("Tex Gyre Heros"),
     url(../fonts/texgyreheros-regular.otf) format("opentype");
 }
+
+// custom scrollbar
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+// Track
+::-webkit-scrollbar-track {
+  background: #151517;
+}
+
+// Handle
+::-webkit-scrollbar-thumb {
+  background: #cbfb45;
+}
