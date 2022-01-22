@@ -19,6 +19,9 @@
     align-items: center;
     img {
       max-width: 400px;
+      @media screen and (max-width: 1024px) {
+        max-width: 250px;
+      }
     }
 
     .about-image-container,
@@ -34,6 +37,9 @@
     img,
     h1 {
       margin: 0;
+      @media screen and (max-width: 1024px) {
+        font-size: 5rem;
+      }
     }
   }
 
