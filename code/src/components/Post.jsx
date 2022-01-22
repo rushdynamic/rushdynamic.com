@@ -7,7 +7,7 @@ export default function Post(props) {
 
   useEffect(() => {
     if (imgRef.current?.complete) {
-      props.setLoadedImgCount(props.loadedImgCount + 1)
+      props.setLoadedImgCount(prevCount => prevCount + 1)
     }
   }, [])
 
@@ -26,7 +26,7 @@ export default function Post(props) {
           src={props.postThumbnail}
           alt="post-thumbnail"
           height="150"
-          onLoad={() => props.setLoadedImgCount(props.loadedImgCount + 1)}
+          onLoad={() => props.setLoadedImgCount(prevCount => prevCount + 1)}
         />
       </div>
       <div className="post-description-container">
