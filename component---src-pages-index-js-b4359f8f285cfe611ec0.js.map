@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-index-js-b4359f8f285cfe611ec0.js","mappings":"sMAEe,SAASA,IACtB,OAAO","sources":["webpack://gatsby-starter-hello-world/./src/pages/index.js"],"sourcesContent":["import React from \"react\"\n\nexport default function Home() {\n  return <div>Welcome to RushDynamic.com!</div>\n}\n"],"names":["Home"],"sourceRoot":""}
