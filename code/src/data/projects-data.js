@@ -33,7 +33,7 @@ const projectsData = [
   },
   {
     title: "crypto-ticker-cli",
-    thumbnail: "/thumbnails/ctcli.png",
+    thumbnail: "/thumbnails/ctcli-float.png",
     url: "https://github.com/RushDynamic/crypto-ticker-cli",
     description:
       "Crypto-Ticker-CLI is a commandline application that displays cryptocurrency prices in realtime using websockets",
