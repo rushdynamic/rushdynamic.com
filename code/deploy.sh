@@ -37,7 +37,7 @@ copy_static_files() {
 push_to_temp() {
     printf "%b%bCreating a temp branch...%b\n" "$BOLD" "$CYAN" "$NC"
     git checkout -b "$temp_branch"
-    ignorecontent="code/"
+    ignorecontent=$'code/\nREADME.md'
     cd .. && echo "$ignorecontent" > .gitignore
     git rm -r code/ # ignore already committed 'code' dir
     git add .
@@ -62,7 +62,7 @@ clean_local() {
     git checkout develop
     printf "%b%bDeleting all local generated files...%b\n" "$BOLD" "$CYAN" "$NC"
     touch blankfile
-    rm -vr !(code|.git)
+    rm -vr !(code|.git|README.md)
     wait
 }
 
