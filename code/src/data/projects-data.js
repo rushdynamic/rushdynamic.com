@@ -1,4 +1,4 @@
-const projectsJson = [
+const projectsData = [
   {
     title: "strife",
     thumbnail: "/thumbnails/strife.png",
@@ -32,6 +32,21 @@ const projectsJson = [
     tags: ["javascript", "websocket", "webrtc", "voip"],
   },
   {
+    title: "crypto-ticker-cli",
+    thumbnail: "/thumbnails/ctcli.png",
+    url: "https://github.com/RushDynamic/crypto-ticker-cli",
+    description:
+      "Crypto-Ticker-CLI is a commandline application that displays cryptocurrency prices in realtime using websockets",
+    tags: [
+      "cryptocurrency",
+      "cli",
+      "npm",
+      "javascript",
+      "websocket",
+      "binance",
+    ],
+  },
+  {
     title: "filecastle",
     thumbnail: "/thumbnails/fc.png",
     url: "https://github.com/RushDynamic/FileCastle",
@@ -39,4 +54,4 @@ const projectsJson = [
     tags: ["c#", "aes", "buffering", "security"],
   },
 ]
-export default projectsJson
+export default projectsData
