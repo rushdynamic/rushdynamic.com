@@ -40,7 +40,7 @@ push_to_temp() {
     ignorecontent=$'code/\nREADME.md'
     cd .. && echo "$ignorecontent" > .gitignore
     git rm -r code/ # ignore already committed 'code' dir
-    git rm REDME.md # ignore already committed 'README' file
+    git rm README.md # ignore already committed 'README' file
     git add .
     git commit -m "Gatsby build ${date_time}"
     git push origin "$temp_branch"
