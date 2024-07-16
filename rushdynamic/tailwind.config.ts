@@ -13,10 +13,15 @@ const config: Config = {
 			},
 			colors: {
 				'light-grey': '#F6F6F6',
+				'dark-grey': '#0D0D0D',
+				'text-dark': '#8F8F8F',
 			},
 			fontFamily: {
 				inter: 'var(--font-inter)',
 				'neue-metana': 'var(--font-neue-metana)',
+				montreal: 'var(--font-montreal)',
+				fraunces: 'var(--font-fraunces)',
+				'jetbrains-mono': 'var(--font-jetbrains-mono)',
 			},
 		},
 	},
