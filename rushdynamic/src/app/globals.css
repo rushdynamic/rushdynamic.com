@@ -3,14 +3,9 @@
 @tailwind utilities;
 
 .custom-bg {
-	/* background-color: rgb(182, 34, 58); */
-	background-image: linear-gradient(
-			to top,
-			rgba(207, 217, 223, 0.2) 0%,
-			rgba(226, 235, 240, 1) 100%
-		),
-		url(/images/noise-light.png);
-	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%),
-		url(/images/noise-light.png);
+	/* background-color: #faad17;
+	background-image: url(/images/noise-light.png); */
+	/* background-image: url(/images/noise.svg); */
+	background-image: linear-gradient(to top, #f6e7e1 0%, #f2f2f2 30%);
 	background-repeat: repeat;
 }
