@@ -14,6 +14,10 @@ const config: Config = {
 			colors: {
 				'light-grey': '#F6F6F6',
 			},
+			fontFamily: {
+				inter: 'var(--font-inter)',
+				'neue-metana': 'var(--font-neue-metana)',
+			},
 		},
 	},
 	plugins: [],
