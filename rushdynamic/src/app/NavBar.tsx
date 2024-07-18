@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect, useState } from 'react';
 
 interface NavBarItemProps {
 	label: string;
@@ -13,6 +15,15 @@ const NavBarItem = ({ label, title }: NavBarItemProps) => {
 };
 
 export default function NavBar() {
+	const [currTime, setCurrTime] = useState<any>();
+	useEffect(() => {
+		const secInterval = setInterval(
+			() => setCurrTime(new Date().toLocaleTimeString()),
+			1000
+		);
+
+		return () => clearInterval(secInterval);
+	}, []);
 	return (
 		<div className="h-12 border-b border-b-dark-grey flex items-center p-2 font-jetbrains-mono mb-4">
 			<div className="flex w-full justify-start">
@@ -22,6 +33,7 @@ export default function NavBar() {
 					<NavBarItem label="Contact" />
 					<NavBarItem label="Resume" />
 				</div>
+				<div>{currTime}</div>
 			</div>
 		</div>
 	);
