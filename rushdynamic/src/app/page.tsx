@@ -19,14 +19,14 @@ export default function Home() {
 				<div className="flex-grow"></div>
 			</div>
 			<div className="h-full flex flex-col items-center justify-center">
-				<div className="flex flex-col md:flex-row gap-8 items-center px-10 pb-10 md:pt-10 rounded-3xl">
-					<div className="bg-[url('/images/scribble.svg')] bg-center bg-no-repeat flex items-center justify-center p-9">
+				<div className="flex flex-col md:flex-row gap-12 items-center px-10 pb-10 md:pt-10 rounded-3xl">
+					<div className="border border-solid border-dark-grey bg-gradient-to-t from-[transparent] to-[#f2f2f2] flex items-center justify-center p-7">
 						<Image
 							src="/images/headshot.jpg"
-							width="250"
-							height="250"
+							width="200"
+							height="200"
 							alt="Profile picture"
-							className="border-[3px] border-white rounded-full select-none w-[150px] md:w-[250px]"
+							className="select-none w-[150px] md:w-[200px]"
 						/>
 					</div>
 					<div className="md:max-w-[600px] font-montreal text-xl text-dark-grey">

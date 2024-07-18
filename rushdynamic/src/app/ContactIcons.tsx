@@ -8,8 +8,8 @@ const ContactIcon = ({ img }: ContactIconProps) => {
 		<img
 			className="opacity-30 hover:opacity-100 transition-opacity cursor-pointer"
 			src={img}
-			height={25}
-			width={25}
+			height={20}
+			width={20}
 		/>
 	);
 };
