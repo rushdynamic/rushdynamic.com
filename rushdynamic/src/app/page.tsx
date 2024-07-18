@@ -18,8 +18,8 @@ export default function Home() {
 							className="select-none w-[250px] md:w-[700px] group-hover:blur-sm transition-all"
 						/>
 					</div>
-					<div className="md:max-w-[600px] font-montreal text-xl text-dark-grey">
-						<p className="text-2xl pb-3">Hi,</p>
+					<div className="md:max-w-[600px] font-montreal text-xl md:text-2xl lg:text-3xl text-dark-grey">
+						<p className="text-2xl md:text-3xl lg:text-4xl pb-3">Hi,</p>
 						<p className="pb-3">
 							I'm a full-stack engineer with over 5 years of professional
 							experience in the industry, currently working out of{' '}
