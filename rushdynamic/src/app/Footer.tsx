@@ -14,7 +14,7 @@ const ContactIcon = ({ img }: ContactIconProps) => {
 	);
 };
 
-export default function ContactIcons() {
+export default function Footer() {
 	return (
 		<div className="flex w-full justify-center gap-8 pb-4">
 			<ContactIcon img="/images/icons/github.svg" />

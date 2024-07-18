@@ -14,7 +14,7 @@ const NavBarItem = ({ label, title }: NavBarItemProps) => {
 
 export default function NavBar() {
 	return (
-		<div className="h-12 border-b border-b-dark-grey flex items-center p-2 font-jetbrains-mono">
+		<div className="h-12 border-b border-b-dark-grey flex items-center p-2 font-jetbrains-mono mb-4">
 			<div className="flex w-full justify-start">
 				<NavBarItem label="gokul.cc" title={true} />
 				<div className="flex-grow flex items-center justify-center gap-6">
