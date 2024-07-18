@@ -10,9 +10,10 @@
 	background-repeat: repeat; */
 	background: url(/images/noise.svg),
 		linear-gradient(to top left, #faad17, transparent),
-		/* linear-gradient(to top right, #f6e7e1, transparent), */
-			linear-gradient(to top, transparent, #f2f2f2 100%);
+		linear-gradient(to top right, #d2c9a0, transparent),
+		linear-gradient(to top, transparent, #f2f2f2 100%);
 	background-blend-mode: overlay, screen, screen;
+	background-attachment: fixed;
 	/* background-size: 400% 400%;
 	animation: gradient 15s ease infinite; */
 }

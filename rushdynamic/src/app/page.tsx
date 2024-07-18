@@ -3,12 +3,12 @@ import Image from 'next/image';
 export default function Home() {
 	return (
 		<>
-			<div className="text-7xl md:text-[12vw] font-neue-metana font-bold select-none text-dark-grey flex flex-col items-center leading-none flex-wrap p-2">
+			<div className="text-7xl md:text-[12vw] lg:mt-4 font-neue-metana font-bold select-none text-dark-grey flex flex-col items-center leading-none flex-wrap p-2">
 				<div className="grow shrink text-center">Gokul Syam</div>
 			</div>
 			<div className="flex-grow"></div>
 			<div className="h-full flex flex-col items-center justify-center">
-				<div className="flex flex-col md:flex-row gap-8 md:gap-14 items-center px-10 pb-10 md:pt-10 rounded-3xl">
+				<div className="flex flex-col md:flex-row gap-8 md:gap-14 items-center px-10 pb-10 md:pt-4 rounded-3xl">
 					<div className="group border-t border-solid border-dark-grey bg-gradient-to-t from-[transparent] to-[#f2f2f2] flex items-center justify-center p-12">
 						<Image
 							src="/images/headshot.jpg"
