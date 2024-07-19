@@ -4,7 +4,23 @@
 		"year": 2024,
 		"image": "/images/projects/sqrrl2.svg",
 		"description": "sqrrl is a minimal state management library for React",
-		"tags": ["TypeScript", "React"]
+		"tags": ["TypeScript", "React"],
+		"git": "https://github.com/rushdynamic/sqrrl"
+	},
+	{
+		"title": "crypto-ticker-cli",
+		"year": 2022,
+		"image": "/images/projects/ctcli-float.png",
+		"description": "A command-line application that displays cryptocurrency prices in realtime using WebSockets",
+		"tags": [
+			"NodeJS",
+			"WebSocket",
+			"Cryptocurrency",
+			"CLI",
+			"JavaScript",
+			"Binance"
+		],
+		"git": "https://github.com/rushdynamic/crypto-ticker-cli"
 	},
 	{
 		"title": "Strife",
@@ -20,27 +36,15 @@
 			"Socket.IO",
 			"MongoDB",
 			"JavaScript"
-		]
+		],
+		"git": "https://github.com/rushdynamic/Strife"
 	},
 	{
 		"title": "strife-live",
 		"year": 2021,
 		"image": "/images/projects/slive.png",
 		"description": "Wrapper library for VoIP using WebRTC",
-		"tags": ["JavaScript", "WebRTC", "VoIP"]
-	},
-	{
-		"title": "crypto-ticker-cli",
-		"year": 2022,
-		"image": "/images/projects/ctcli-float.png",
-		"description": "A command-line application that displays cryptocurrency prices in realtime using WebSockets",
-		"tags": [
-			"NodeJS",
-			"WebSocket",
-			"Cryptocurrency",
-			"CLI",
-			"JavaScript",
-			"Binance"
-		]
+		"tags": ["JavaScript", "WebRTC", "VoIP"],
+		"git": "https://github.com/rushdynamic/strife-live"
 	}
 ]
