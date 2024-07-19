@@ -1,0 +1,46 @@
+[
+	{
+		"title": "sqrrl",
+		"year": 2024,
+		"image": "/images/projects/sqrrl2.svg",
+		"description": "sqrrl is a minimal state management library for React",
+		"tags": ["TypeScript", "React"]
+	},
+	{
+		"title": "Strife",
+		"year": 2021,
+		"image": "/images/projects/strife.png",
+		"description": "End-to-end encrypted VoIP and real-time chat powered by WebRTC and Socket.IO",
+		"tags": [
+			"NodeJS",
+			"React",
+			"Encryption",
+			"WebRTC",
+			"Redux",
+			"Socket.IO",
+			"MongoDB",
+			"JavaScript"
+		]
+	},
+	{
+		"title": "strife-live",
+		"year": 2021,
+		"image": "/images/projects/slive.png",
+		"description": "Wrapper library for VoIP using WebRTC",
+		"tags": ["JavaScript", "WebRTC", "VoIP"]
+	},
+	{
+		"title": "crypto-ticker-cli",
+		"year": 2022,
+		"image": "/images/projects/ctcli-float.png",
+		"description": "A command-line application that displays cryptocurrency prices in realtime using WebSockets",
+		"tags": [
+			"NodeJS",
+			"WebSocket",
+			"Cryptocurrency",
+			"CLI",
+			"JavaScript",
+			"Binance"
+		]
+	}
+]
