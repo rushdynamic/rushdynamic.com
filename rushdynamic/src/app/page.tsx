@@ -21,14 +21,15 @@ export default function Home() {
 					<div className="md:max-w-[600px] font-montreal text-xl md:text-2xl lg:text-3xl text-dark-grey">
 						<p className="text-2xl md:text-3xl lg:text-4xl pb-3">Hi,</p>
 						<p className="pb-3">
-							I'm a full-stack engineer with over 5 years of professional
-							experience in the industry, currently working out of{' '}
+							{
+								"I'm a full-stack engineer with over 5 years of professional experience in the industry, currently working out of "
+							}
 							<span className="font-fraunces italic">Bangalore, India</span>
-							{'.'}
 						</p>
 						<p>
-							I'm also an open source enthusiast, a hobbyist photographer, and
-							someone who relishes art in all its forms.
+							{
+								"I'm also an open source enthusiast, a hobbyist photographer, and someone who relishes art in all its forms."
+							}
 						</p>
 					</div>
 				</div>
