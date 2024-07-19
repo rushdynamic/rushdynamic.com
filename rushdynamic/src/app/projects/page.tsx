@@ -1,23 +1,22 @@
-'use client';
-import React, { useState } from 'react';
-import projects from '../data/projects.json';
+import React from 'react';
+import { projects } from '../data/projects';
 import ProjectItems from './ProjectItems';
-import ExpandedProjectItem from './ExpandedProjectItem';
+
+export interface ActiveProject {
+	title: string;
+	readme: string;
+}
 
 export default function Projects() {
-	const [activeProject, setActiveProject] = useState<string>('');
-	console.log('activeProject:', activeProject);
-	if (activeProject == '')
-		return (
-			<div className="p-8 font-montreal text-dark-grey flex flex-col gap-4">
-				<div className="text-7xl font-semibold">Projects</div>
-				<div className="text-xl md:text-2xl lg:text-3xl">
-					Independent projects I've worked on for both learning and amusement.
-					<br />
-					Primarily for amusement.
-				</div>
-				<ProjectItems projects={projects} onClick={setActiveProject} />
+	return (
+		<div className="p-8 font-montreal text-dark-grey flex flex-col gap-4">
+			<div className="text-7xl font-semibold">Projects</div>
+			<div className="text-xl md:text-2xl lg:text-3xl">
+				Independent projects I've worked on for both learning and amusement.
+				<br />
+				Primarily for amusement.
 			</div>
-		);
-	return <ExpandedProjectItem onClear={() => setActiveProject('')} />;
+			<ProjectItems projects={Object.values(projects)} />
+		</div>
+	);
 }
