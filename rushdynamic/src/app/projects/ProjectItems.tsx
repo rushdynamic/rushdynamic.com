@@ -35,9 +35,8 @@ const ProjectItem = ({
 		<Link href={git} passHref legacyBehavior>
 			<a target="_blank" rel="noopener noreferrer">
 				<motion.div
-					initial={{ y: 20, opacity: 0 }}
-					animate={{ y: 0, opacity: 1 }}
-					transition={{ ease: 'easeInOut', duration: 0.75 }}
+					whileHover={{ scale: 1.05 }}
+					transition={{ type: 'spring', stiffness: 400, damping: 10 }}
 					className="group h-fit w-80 min-w-80 p-6 bg-gradient-to-t from-white to-transparent flex flex-col gap-2 justify-between md:border-t border-solid border-dark-grey hover:cursor-pointer"
 				>
 					<div className="flex items-center justify-center max-w-[80]">
@@ -72,7 +71,7 @@ interface ProjectItemsProps {
 }
 const ProjectItems = ({ projects }: ProjectItemsProps) => {
 	return (
-		<div className="w-full flex items-start justify-center gap-2 flex-wrap">
+		<div className="w-full flex items-start justify-center gap-6 flex-wrap">
 			{projects.map((project) => (
 				<ProjectItem
 					key={project.title}

@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
@@ -30,7 +31,12 @@ export default function NavBar() {
 		return () => clearInterval(secInterval);
 	}, []);
 	return (
-		<div className="h-12 border-b border-b-dark-grey flex items-center p-2 font-jetbrains-mono mb-4 text-dark-grey">
+		<motion.div
+			initial={{ y: -50 }}
+			animate={{ y: 0 }}
+			transition={{ type: 'spring', stiffness: 300 }}
+			className="h-12 border-b border-b-dark-grey flex items-center p-2 font-jetbrains-mono mb-4 text-dark-grey"
+		>
 			<div className="flex w-full justify-start items-center">
 				<Link href="/">
 					<div className="font-jetbrains-mono text-xs cursor-pointer">
@@ -46,6 +52,6 @@ export default function NavBar() {
 					{currTime}
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
