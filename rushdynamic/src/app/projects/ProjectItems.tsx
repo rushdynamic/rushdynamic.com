@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 interface ProjectItemTagProps {
 	tagName: string;
@@ -31,9 +34,20 @@ const ProjectItem = ({
 	return (
 		<Link href={git} passHref legacyBehavior>
 			<a target="_blank" rel="noopener noreferrer">
-				<div className="group h-fit w-80 min-w-80 p-6 bg-gradient-to-t from-white to-transparent flex flex-col gap-2 justify-between md:border-t border-solid border-dark-grey hover:cursor-pointer hover:w-[400px] transition-all">
-					<div className="flex items-center justify-center">
-						<Image src={image} className="rounded-sm" alt={title} />
+				<motion.div
+					initial={{ y: 20, opacity: 0 }}
+					animate={{ y: 0, opacity: 1 }}
+					transition={{ ease: 'easeInOut', duration: 0.75 }}
+					className="group h-fit w-80 min-w-80 p-6 bg-gradient-to-t from-white to-transparent flex flex-col gap-2 justify-between md:border-t border-solid border-dark-grey hover:cursor-pointer"
+				>
+					<div className="flex items-center justify-center max-w-[80]">
+						<Image
+							src={image}
+							className="rounded-sm"
+							alt={title}
+							height={280}
+							width={280}
+						/>
 					</div>
 					<div className="flex items-center justify-between gap-1">
 						<div className="text-4xl">{title}</div>
@@ -47,7 +61,7 @@ const ProjectItem = ({
 							<ProjectItemTag key={tag} tagName={tag} />
 						))}
 					</div>
-				</div>
+				</motion.div>
 			</a>
 		</Link>
 	);
