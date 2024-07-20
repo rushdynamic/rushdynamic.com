@@ -32,9 +32,9 @@ export default function NavBar() {
 	}, []);
 	return (
 		<motion.div
-			initial={{ y: -50 }}
+			initial={{ y: -48 }}
 			animate={{ y: 0 }}
-			transition={{ type: 'spring', stiffness: 300 }}
+			transition={{ type: 'spring', stiffness: 150 }}
 			className="h-12 border-b border-b-dark-grey flex items-center p-2 font-jetbrains-mono mb-4 text-dark-grey"
 		>
 			<div className="flex w-full justify-start items-center">
