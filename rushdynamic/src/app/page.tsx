@@ -10,20 +10,29 @@ export default function Home() {
 			</div>
 			<div className="flex-grow"></div>
 			<div className="h-full flex flex-col items-center justify-center">
-				<div className="flex flex-col md:flex-row gap-8 md:gap-14 items-center px-10 pb-10 md:pt-4 rounded-3xl">
+				<div className="flex flex-col xl:flex-row gap-8 md:gap-14 items-center px-10 pb-10 md:pt-4 rounded-3xl">
 					<motion.div
 						initial={{ y: 20, opacity: 0 }}
 						animate={{ y: 0, opacity: 1 }}
 						transition={{ ease: 'easeInOut', duration: 0.5 }}
-						className="group border-t border-solid border-dark-grey bg-gradient-to-t from-[transparent] to-[#f2f2f2] flex items-center justify-center p-8 md:p-12"
+						className="group border-t border-solid border-dark-grey bg-gradient-to-t from-[transparent] to-[transparent] flex items-center justify-center p-8 md:p-12"
 					>
-						<Image
-							src="/images/headshot.jpg"
-							width="500"
-							height="500"
-							alt="Profile picture"
-							className="select-none w-[250px] md:w-[700px] group-hover:blur-sm transition-all"
-						/>
+						<div className="flex relative w-[250px] h-[250px] md:w-[500px] md:h-[500px] xl:w-[700px] xl:h-[700px]">
+							<Image
+								src="/images/headshot-olive.png"
+								layout="fill"
+								objectFit="cover"
+								alt="Profile picture"
+								className="select-none w-[250px] md:w-[700px] "
+							/>
+							<Image
+								src="/images/headshot-pixelated.svg"
+								layout="fill"
+								objectFit="cover"
+								alt="Profile picture"
+								className="select-none w-[250px] md:w-[700px] transition-opacity duration-1000 ease-out opacity-100 hover:opacity-0"
+							/>
+						</div>
 					</motion.div>
 					<motion.div
 						initial={{ y: 20, opacity: 0 }}
