@@ -15,7 +15,7 @@ export default function Home() {
 						initial={{ y: 20, opacity: 0 }}
 						animate={{ y: 0, opacity: 1 }}
 						transition={{ ease: 'easeInOut', duration: 0.5 }}
-						className="group border-t border-solid border-dark-grey bg-gradient-to-t from-[transparent] to-[#f2f2f2] flex items-center justify-center p-12"
+						className="group border-t border-solid border-dark-grey bg-gradient-to-t from-[transparent] to-[#f2f2f2] flex items-center justify-center p-8 md:p-12"
 					>
 						<Image
 							src="/images/headshot.jpg"
