@@ -43,7 +43,7 @@ export default function NavBar() {
 						gokul.cc
 					</div>
 				</Link>
-				<div className="flex-grow flex items-center justify-center gap-6">
+				<div className="flex-grow flex items-center justify-end md:justify-center md:gap-4 text-xs md:text-sm">
 					<NavBarItem label="Projects" url="/projects" />
 					<NavBarItem label="Contact" url="/contact" />
 					<NavBarItem label="Resume" url="/resume" />
