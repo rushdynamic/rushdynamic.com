@@ -96,6 +96,14 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<link
+					rel="icon"
+					type="image/x-png"
+					href="./images/favicon.png"
+					sizes="any"
+				/>
+			</head>
 			<body
 				className={`${inter.variable} ${neueMetana.variable} ${montreal.variable} ${fraunces.variable} ${jetbrainsMono.variable}`}
 			>
