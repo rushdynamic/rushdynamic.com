@@ -19,10 +19,9 @@ const NavBarItem = ({ label, url }: NavBarItemProps) => {
 };
 
 export default function NavBar() {
-	const [currTime, setCurrTime] = useState<any>(
-		new Date().toLocaleTimeString('en-us')
-	);
+	const [currTime, setCurrTime] = useState<any>('');
 	useEffect(() => {
+		setCurrTime(new Date().toLocaleTimeString('en-us'));
 		const secInterval = setInterval(
 			() => setCurrTime(new Date().toLocaleTimeString('en-us')),
 			1000
