@@ -37,7 +37,7 @@ const ProjectItem = ({
 				<motion.div
 					whileHover={{ scale: 1.05 }}
 					transition={{ type: 'spring', stiffness: 400, damping: 10 }}
-					className="group h-fit w-80 min-w-80 p-6 bg-gradient-to-t from-white to-transparent flex flex-col gap-2 justify-between md:border-t border-solid border-dark-grey hover:cursor-pointer"
+					className="group h-full w-50 min-w-50 lg:w-80 lg:min-w-80 p-6 bg-gradient-to-t from-white to-transparent flex flex-col gap-2 justify-between md:border-t border-solid border-dark-grey hover:cursor-pointer"
 				>
 					<div className="flex items-center justify-center max-w-[80]">
 						<Image
