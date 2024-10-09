@@ -107,12 +107,14 @@ export default function RootLayout({
 			<body
 				className={`${inter.variable} ${neueMetana.variable} ${montreal.variable} ${fraunces.variable} ${jetbrainsMono.variable}`}
 			>
-				<main className="min-h-screen flex flex-col justify-start custom-bg">
-					<NavBar />
-					{children}
-					<div className="grow" />
-					<Footer />
-				</main>
+				<div className="h-full custom-bg flex flex-col items-center">
+					<main className="min-h-screen md:w-[60%] flex flex-col justify-start">
+						<NavBar />
+						{children}
+						<div className="grow" />
+						<Footer />
+					</main>
+				</div>
 			</body>
 		</html>
 	);
