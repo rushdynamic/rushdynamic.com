@@ -23,6 +23,9 @@ const config: Config = {
 				fraunces: 'var(--font-fraunces)',
 				'jetbrains-mono': 'var(--font-jetbrains-mono)',
 			},
+			screens: {
+				'3xl': '1921px',
+			},
 		},
 	},
 	plugins: [],

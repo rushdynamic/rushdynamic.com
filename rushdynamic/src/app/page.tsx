@@ -17,7 +17,7 @@ export default function Home() {
 						transition={{ ease: 'easeInOut', duration: 0.5 }}
 						className="group border-t border-solid border-dark-grey bg-gradient-to-t from-[transparent] to-[transparent] flex items-center justify-center py-8 md:py-12 cursor-help"
 					>
-						<div className="flex relative w-[250px] h-[250px] md:w-[400px] md:h-[400px] 2xl:w-[700px] 2xl:h-[700px]">
+						<div className="flex relative w-[250px] h-[250px] md:w-[400px] md:h-[400px] 2xl:w-[550px] 2xl:h-[550px] 3xl:w-[700px] 3xl:h-[700px]">
 							<Image
 								src="/images/headshot-olive.png"
 								layout="fill"
@@ -41,7 +41,7 @@ export default function Home() {
 						initial={{ y: 20, opacity: 0 }}
 						animate={{ y: 0, opacity: 1 }}
 						transition={{ ease: 'easeInOut', duration: 0.75 }}
-						className="md:max-w-[600px] font-montreal text-xl md:text-2xl lg:text-2xl 2xl:text-4xl 2xl:leading-[1.4] text-dark-grey px-4"
+						className="md:max-w-[600px] font-montreal text-xl md:text-2xl lg:text-2xl xl:text-xl 2xl:text-3xl 3xl:text-4xl 3xl:leading-[1.4] text-dark-grey px-4"
 					>
 						<p className="text-2xl md:text-3xl lg:text-3xl 2xl:text-4xl pb-3">
 							Hi,
